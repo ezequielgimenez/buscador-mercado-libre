@@ -14,7 +14,7 @@ module.exports = {
   watch: true,
   output: {
     path: path.resolve(__dirname, "dist-webpack"),
-    filename: "bundle.js",
+    filename: "[name].[chunkhash].js", // Usar [name].[chunkhash].js para nombres únicos
   },
   module: {
     rules: [
@@ -23,11 +23,9 @@ module.exports = {
         exclude: /src/,
         use: ["style-loader", "css-loader"],
       },
-
       {
         test: /\.css$/,
         include: /src/,
-        // exclude: /src\/pages\/searchItem\.css/, <--- Ponerlo en otra carpeta fuera de src y listo
         use: [
           "style-loader",
           {
