@@ -4,7 +4,6 @@ import AwesomeSlider from 'react-awesome-slider';
 
 import { useSearchItem } from "../hooks/hooks";
 
- import "../../index.css"
 
 export function SearchItem(){
     const results =  useSearchItem()
