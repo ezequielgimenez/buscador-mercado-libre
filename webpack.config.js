@@ -1,5 +1,6 @@
 const path = require("path");
 const liveserver = require("live-server");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin"); // Importar el plugin aquí
 
 const dev = process.env.NODE_ENV == "development";
 if (dev) {
