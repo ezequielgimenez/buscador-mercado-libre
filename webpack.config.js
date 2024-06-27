@@ -23,6 +23,7 @@ module.exports = {
         exclude: /src/,
         use: ["style-loader", "css-loader"],
       },
+
       {
         test: /\.css$/,
         include: /src/,
@@ -46,5 +47,12 @@ module.exports = {
   },
   resolve: {
     extensions: [".tsx", ".js"],
+  },
+  optimization: {
+    splitChunks: {
+      chunks: "all",
+      minSize: 20000, // Ejemplo: tamaño mínimo de un chunk separado
+      // Puedes ajustar más configuraciones según sea necesario
+    },
   },
 };
