@@ -21,6 +21,7 @@
     "@types/react": "^18.3.3",
     "cross-env": "^7.0.3",
     "live-server": "^1.2.2",
+    "mini-css-extract-plugin": "^2.9.0",
     "style-loader": "^4.0.0",
     "ts-loader": "^9.5.1",
     "webpack": "^5.91.0",

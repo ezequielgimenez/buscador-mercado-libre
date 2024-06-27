@@ -14,20 +14,19 @@ module.exports = {
   watch: true,
   output: {
     path: path.resolve(__dirname, "dist-webpack"),
-    filename: "[name].[chunkhash].js", // Usar [name].[chunkhash].js para nombres únicos
+    filename: "bundle.js",
   },
   module: {
     rules: [
       {
         test: /\.css$/,
-        exclude: /src/,
-        use: ["style-loader", "css-loader"],
+        use: [MiniCssExtractPlugin.loader, "css-loader"],
       },
       {
         test: /\.css$/,
         include: /src/,
         use: [
-          "style-loader",
+          MiniCssExtractPlugin.loader,
           {
             loader: "css-loader",
             options: {
@@ -46,11 +45,10 @@ module.exports = {
   resolve: {
     extensions: [".tsx", ".js"],
   },
-  optimization: {
-    splitChunks: {
-      chunks: "all",
-      minSize: 20000, // Ejemplo: tamaño mínimo de un chunk separado
-      // Puedes ajustar más configuraciones según sea necesario
-    },
-  },
+  plugins: [
+    new MiniCssExtractPlugin({
+      filename: "[name].css",
+      chunkFilename: "[id].css",
+    }),
+  ],
 };
