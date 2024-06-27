@@ -6,7 +6,6 @@
 .layoutMain {
   display: flex;
   flex-direction: column;
-  /* border: solid 7px rgba(255, 230, 0, 255); */
 }
 
 .headerMain {
