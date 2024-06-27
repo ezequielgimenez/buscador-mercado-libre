@@ -5,7 +5,7 @@ import { AppRoutes } from "./router";
 import { RecoilRoot } from "recoil";
 
 import '@coreui/coreui/dist/css/coreui.min.css'
-
+import "./index.css"
 
 ReactDOM.createRoot(document.querySelector(".root")).render(
     <RecoilRoot>
