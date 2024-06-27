@@ -1,7 +1,7 @@
 import React from "react";
 import { FaMagnifyingGlass } from "react-icons/fa6";
 
-import * as style from "./button.css"
+import * as style from "./button.module.css"
 
 
 export function MyButton() {

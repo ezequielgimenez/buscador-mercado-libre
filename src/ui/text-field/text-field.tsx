@@ -1,5 +1,5 @@
 import React from "react";
-import * as  style from "./text-field.css"
+import * as  style from "./text-field.module.css"
 
 type p ={
     name:string,

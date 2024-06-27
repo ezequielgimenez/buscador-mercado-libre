@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import * as  style from "./searchForm.css" 
+import * as  style from "./searchForm.module.css" 
 
 import { MyButton } from "../ui/buttons/button"; 
 import { MyInput } from "../ui/text-field/text-field";

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Outlet, useNavigate } from "react-router-dom";
-import * as style from "./layaout.css"
+import * as style from "./layaout.module.css"
 
 //Otro component
 import { SearchForm } from "./SearchForm";
