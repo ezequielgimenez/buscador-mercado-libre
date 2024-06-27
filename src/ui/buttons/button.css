@@ -1,0 +1,27 @@
+.contenedorButton {
+  margin-right: 20px;
+  margin-left: 2px;
+  display: flex;
+}
+
+.button {
+  flex-grow: 1;
+
+  height: 34px;
+  background-color: white;
+  color: #d1dbd1;
+  border: none;
+  cursor: pointer;
+  border-radius: 0 2px 2px 0;
+}
+
+.button:focus {
+  box-shadow: 0 0 0 1px rgba(247, 173, 13, 0.631);
+}
+
+.button:hover {
+  background-color: white;
+}
+.button:active {
+  background-color: white;
+}

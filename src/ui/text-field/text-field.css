@@ -1,0 +1,27 @@
+.mainInput {
+  display: flex;
+  flex-grow: 1;
+}
+
+.inputForm {
+  flex-grow: 1;
+  min-width: 250px;
+  max-width: 800px;
+  height: 34px;
+  border: none;
+  border-radius: 2px 0 0 2px;
+  outline: none;
+}
+
+.inputForm:focus {
+  box-shadow: 0 0 0 1px rgba(247, 173, 13, 0.631);
+}
+
+@media (min-width: 921px) {
+  .mainInput {
+    flex-grow: 0;
+  }
+  .inputForm {
+    width: 800px;
+  }
+}
